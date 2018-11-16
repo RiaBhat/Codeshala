@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "377498059614",
+    "firebase_url": "https://codeshala-bb510.firebaseio.com",
+    "project_id": "codeshala-bb510",
+    "storage_bucket": "codeshala-bb510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377498059614:android:5fa1c6d4d291a418",
+        "android_client_info": {
+          "package_name": "com.example.android.codeshala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377498059614-ddfr21mvdfso9lt22hc9r4ap2u4jsl6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.codeshala",
+            "certificate_hash": "fb9c7fb10ac736489af7beb6c02262ce49d9ae55"
+          }
+        },
+        {
+          "client_id": "377498059614-ips1to8rhmir8gdqdttghqeuvru54c0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBENXSMJBsNMzHQCfHm_VUnOGfkj8_mL68"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377498059614-ips1to8rhmir8gdqdttghqeuvru54c0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
