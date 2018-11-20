@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Mentors" />
+        <activity android:name=".Placements" />
+        <activity android:name=".Colleges" />
+        <activity android:name=".Competetive" />
+        <activity android:name=".Development"></activity>
     </application>
 
 </manifest>
