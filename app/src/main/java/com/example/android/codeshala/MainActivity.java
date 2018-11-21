@@ -90,11 +90,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                String value = dataSnapshot.getValue(String.class);
-
-                updates.add(value);
-
+                for(DataSnapshot child: dataSnapshot){
+                    String value = dataSnapshot.getValue(String.class);
+                    updates.add(value);
+                }
                 arrayAdapter.notifyDataSetChanged();
 
                 Toast.makeText(MainActivity.this,
