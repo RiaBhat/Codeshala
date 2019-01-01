@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     private TextView TV;
     private ListView list;
     private ArrayList<String> updates = new ArrayList<>();
-    public static final String TAG = "10";
+    public static final String TAG = "riaria";
 
     private DatabaseReference mDatabase;
     @Override
@@ -90,15 +90,18 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot child: dataSnapshot){
-                    String value = dataSnapshot.getValue(String.class);
+                Log.d(TAG, dataSnapshot.toString());
+                updates.clear();
+                for(DataSnapshot child: dataSnapshot.getChildren()){
+                    String value = child.getValue(String.class);
                     updates.add(value);
+                    Log.d(TAG, "Value is: " + value);
                 }
                 arrayAdapter.notifyDataSetChanged();
 
                 Toast.makeText(MainActivity.this,
                         "list loading", Toast.LENGTH_SHORT).show();
-                Log.d(TAG, "Value is: " + value);
+
 
             }
 
@@ -106,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 //Toast.makeText(getApplicationContext(),"Some error occured", Toast.LENGTH_SHORT); );
                 Toast.makeText(MainActivity.this,
-                        "Some error occured", Toast.LENGTH_SHORT).show();
+                        "Some error occured(Connection lost)", Toast.LENGTH_SHORT).show();
                 Log.w(TAG, "Failed to read value.");// error.toException());
             }
         });

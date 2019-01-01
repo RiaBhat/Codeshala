@@ -6,4 +6,205 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.codeshala.Competetive">
 
+    <ScrollView
+        android:id="@+id/screen"
+        android:background="#84d4b1"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="Introduction To Programming-"
+                />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt1"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Session Details-"
+                />
+            <ListView
+                android:id="@+id/lst1"
+                android:layout_below="@id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </ListView>
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/lst1"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Syllabus-"
+                />
+            <ListView
+                android:id="@+id/lst2"
+                android:layout_below="@id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+            </ListView>
+
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_below="@id/lst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:text="Datastructures - 1"
+                />
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt4"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Session Details-"
+                />
+            <ListView
+                android:id="@+id/lst3"
+                android:layout_below="@id/txt5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </ListView>
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/lst3"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Syllabus-"
+                />
+            <ListView
+                android:id="@+id/lst4"
+                android:layout_below="@id/txt6"
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+            </ListView>
+
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_below="@id/lst4"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:text="Datastructures - 2"
+                />
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt7"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Session Details-"
+                />
+            <ListView
+                android:id="@+id/lst5"
+                android:layout_below="@id/txt8"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/txt9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/lst5"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Syllabus-"
+                />
+            <ListView
+                android:id="@+id/lst6"
+                android:layout_below="@id/txt9"
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/txt10"
+                android:layout_below="@id/lst6"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:text="Placement Prep-"
+                />
+            <TextView
+                android:id="@+id/txt11"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt10"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Session Details-"
+                />
+            <ListView
+                android:id="@+id/lst7"
+                android:layout_below="@id/txt11"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/lst7"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Syllabus-"
+                />
+            <ListView
+                android:id="@+id/lst8"
+                android:layout_below="@id/txt12"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+            </ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen" />
+
 </android.support.constraint.ConstraintLayout>

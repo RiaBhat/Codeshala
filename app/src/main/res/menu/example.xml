@@ -12,7 +12,7 @@
         app:showAsAction="never"/>
     <item
         android:id="@+id/option3"
-        android:title="Colaborating Collages"
+        android:title="Partners-"
         app:showAsAction="never"/>
 
     <item
