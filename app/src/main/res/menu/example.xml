@@ -22,7 +22,7 @@
         <menu>
             <item
                 android:id="@+id/subitem1"
-                android:title="Competetive Coding"
+                android:title="Competitive Coding"
                 />
             <item
                 android:id="@+id/subitem2"
